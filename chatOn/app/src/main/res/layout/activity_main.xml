@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/chat_buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHAT"
+            android:background="@drawable/rounded_white_btn"
+            android:textColor="@color/color_black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            style="@style/nav_menu_style">
+        </Button>
+
+        <Button
+            android:id="@+id/group_buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GROUP"
+            android:textColor="@color/color_black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            style="@style/nav_menu_style">
+        </Button>
+
+        <Button
+            android:id="@+id/contact_buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACT"
+            android:textColor="@color/color_black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            style="@style/nav_menu_style">
+
+        </Button>
+
+        <Button
+            android:id="@+id/request_buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REQUEST"
+            android:textColor="@color/color_black"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            style="@style/nav_menu_style">
+
+        </Button>
+
+    </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+
+
+
+</LinearLayout>
